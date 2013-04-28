@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Accra Cab Services</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+</head>
+<body>
+	<!-- Welcome -->
+	<section data-role="page" id="welcome">
+		<header data-role="header">
+		<h1>Welcome</h1>	
+		</header>
+		<div data-role="content">
+			<h1>Welcome ACS</h1>
+			</div>
+			<div data-role="content">
+				<ul data-role="listveiw" data-inset="true">
+					<a href="#login"><img src="./img/taxi1.jpg"> </a>
+					<p style="text-align: center">Raliable!</p>
+					<ul data-role="controlgroup" data-type="horizontal">
+						<a href="#signup" data-role="button" >signup</a>
+						<a href="#login" data-role="button" >login</a>
+					</ul>
+				</ul>
+			</div>
+		</div> 
+		</div>
+		<div data-role="footer">
+			<h3>&copy 2013 Accra Cab Services</h3>
+		</div>
+	</section>
+
+	<!-- signup -->
+	<div data-role="page" id="signup">
+		<div data-role="header">
+			<nav data-role="navbar" >
+			<ul>
+			<li><a href="#start-page" class="ui-btn-active ui-state-persist" data-icon="start-page">start-page</a></li>
+			<li><a href="#settings" data-icon="gear">Settings</a><li>
+			</ul>	
+		</nav>	
+		</div>
+		<div data-role="content">
+			<p style="text-align:center">Sign Up</p>
+			<form method="post" name="signup">
+				<ul>
+					<input lable for="username" type="text" placeholder="user name"></input>
+					<input lable for="phoneNumber" type="text" placeholder="phone number"></input>
+					<input lable for="password" type="password" placeholder="password"></input>
+					<input lable for="verifyPassword" type="password" placeholder="verify password"></input>
+				</ul>
+				<a href="#user-details" data-role="button" data-transition="slide" data-inline="true">Sign Up</a>
+			</form>
+			<div>
+				<p style="text-align: center">Do you have an account already?<br>Please log in</p>
+				<a href="#login" data-role="button" data-transition="slide" data-inline="true">Log In</a>
+			</div>
+		</div>
+		<div data-role="footer">
+		<h3>&copy 2013 Accra Cab Services</h3>
+		</div>
+	</div>
+	
+	<!-- user details -->
+	<div data-role="page" id="user-details">
+			<header data-role="header">
+			</header>
+			<div data-role="content">
+		
+				<form method="post" name="user-details">
+					<ul>
+						<input lable for="username" type="text" placeholder="user name">{user name}</input>
+						<input name="firstname" type="text" placeholder="first name"></input>
+						<input name="lastname" type="text" placeholder="last name"></input>
+						<input name="phoneNumber" type="text" placeholder="phone number">{phone number}</input>
+						<input name="password" type="password" placeholder="password">{password}</input>
+					</ul>
+					<a href="#start-page" data-role="button" data-transition="slide" data-inline="true">Sign Up</a>
+				</form>
+			</div>
+			<footer data-role="footer">
+			<h3>&copy 2013 Accra Cab Services</h3>
+			</footer>
+		</div>
+
+	</div>	
+
+	<!--log in-->
+		<div data-role="page" id="login">
+			<header data-role="header">Login</header>
+			<div data-role="content">
+				<p style="text-align:center">Login Here</p>
+				<form method="post" name="signup">
+					<ul>
+						<input lable for="username" type="text" placeholder="user name"></input>
+						<input lable for="password" type="password" placeholder="password"></input>
+					</ul>
+					<a href="#start-page" data-role="button" data-transition="slide" data-inline="true">Log In</a>
+				</form>
+				<div>
+					<p style="text-align:center">Don't have an account? <br> Signup now</p>
+					<a href="#signup" data-role="button" data-inline="true">signup</a>
+				</div>
+			</div>	
+			<footer data-role="footer">
+			<h3>&copy 2013 Accra Cab Services</h3>
+			</footer>
+		</div>
+
+	<!-- User Start Page -->
+	<div data-role="page" id="start-page">
+			<header data-role="header">
+			<nav data-role="navbar" >
+			<ul>
+			<li><a href="#start-page" class="ui-btn-active ui-state-persist" data-icon="home">Home</a></li>
+			<li><a href="#settings" data-icon="gear">Settings</a><li>
+			</ul>	
+			</nav>	
+			</header>
+
+			<div data-role="content">
+				<p style="text-align:center"><h2>How may we serve you today?</h2></p>
+				<div>
+					<ul data-role="listview" data-inset="true">
+						<li ><a href="#request-cab">Request a Cab</a></li>	
+						<li><a href="#reserve-cab">Reserve a Cab</a></li>
+						<li><a href="#check-history">Check History</a></li>
+						<li><a href="#feedback">Feedback</a></li>	
+					</ul>
+				</div>
+			</div>	
+			<footer data-role="footer">
+			<h3>&copy 2013 Accra Cab Services</h3>	
+			</footer>
+		</div>
+
+	<!--Request Cab-->
+		<div data-role="page" id="request-cab">
+			<header data-role="header"><h1>Request a Cab</h1>
+			<nav data-role="navbar" >
+			<ul>
+			<li><a href="#start-page" class="ui-btn-active ui-state-persist" data-icon="home">Home</a></li>
+			<li><a href="#settings" data-icon="gear">Settings</a><li>
+			</ul>	
+			</nav>		
+			</header>
+			<div data-role="content"><h2>Request a Cab</h2>
+				<form method="post">
+					<input type="text" name="location" placeholder="location"></input>
+					<input type="text" name="destination" placeholder="destination"></input>
+					<input type="date" name="date" placeholder="date"></input>
+					<input type="time" name="time" placeholder="time"></input>
+					<a href="#request-confirmation" data-role="button" data-inline="true">Send Request</a>
+					<a href="#start-page" data-role="button" data-inline="true">Cancel</a>
+				</form>
+			</div>
+			<footer data-role="footer">
+			<h3>&copy 2013 Accra Cab Services</h3>		
+			</footer>	
+		</div>	
+
+	<!--Reserve Cab-->
+		<div data-role="page" id="reserve-cab">
+			<header data-role="header"><h2>Reserve a Cab</h2>
+			<nav data-role="navbar" >
+			<ul>
+			<li><a href="#start-page" class="ui-btn-active ui-state-persist" data-icon="home">Home</a></li>
+			<li><a href="#settings" data-icon="gear">Settings</a><li>
+			</ul>	
+			</nav>		
+			</header>
+			<div data-role="content"><h2>Reserve a Cab</h2>
+				<div data-role="content">
+				<form method="post">
+					<input type="text" name="location" placeholder="location"></input>
+					<input type="text" name="destination" placeholder="destination"></input>
+					<input type="date" name="date-from" placeholder="beginning from"></input>
+					<input type="date" name="date-to" placeholder="ending on"></input>
+					<input type="time" name="time-from" placeholder="at what time?"></input>
+					<input type="time" name="time-to" placeholder="till what time?"></input>
+					<a href="#request-confirmation" data-role="button" data-inline="true">Send Request</a>
+					<a href="#start-page" data-role="button" data-inline="true">Cancel</a>
+				</form>
+				
+			</div>
+
+			</div>
+			<footer data-role="footer">
+			<h3>&copy 2013 Accra Cab Services</h3></footer>
+		</div>
+
+	<!--Check History-->
+		<div data-role="page" id="check-history">
+			<header data-role="header"><h1>Check History</h1>
+			<nav data-role="navbar" >
+			<ul>
+			<li><a href="#start-page" class="ui-btn-active ui-state-persist" data-icon="home">Home</a></li>
+			<li><a href="#settings" data-icon="gear">Settings</a><li>
+			</ul>	
+			</nav>	
+			</header>
+			<div data-role="content"><h2>Check History</h2>
+				<ul date="lisview" data-inset="true" data-role="list-divider">
+					<li>
+						you have been here 
+					</li>
+				</ul>
+			</div>
+			<footer data-role="footer">
+			<h3>&copy 2013 Accra Cab Services</h3>	
+			</footer>
+		</div>
+
+	<!--Feedback-->
+		<div data-role="page" id="feedback">
+			<header data-role="header"><h2>Feedback</h2>
+			<nav data-role="navbar" >
+			<ul>
+			<li><a href="#start-page" class="ui-btn-active ui-state-persist" data-icon="home">Home</a></li>
+			<li><a href="#settings" data-icon="gear">Settings</a><li>
+			</ul>	
+			</nav>	
+			</header>
+			<div data-role="content"><h2>Feedback</h2>
+				<form>
+					<fieldset data-role="controlgroup" data-mini="true">
+    				<input type="radio" name="radio-mini" id="radio-mini-1" value="choice-1" checked="checked"/>
+    				<label for="radio-mini-1">Price</label>
+					<input type="radio" name="radio-mini" id="radio-mini-2" value="choice-2"/>
+    				<label for="radio-mini-2">Customer Care</label>
+    				<input type="radio" name="radio-mini" id="radio-mini-3" value="choice-3"/>  <label for="radio-mini-3">Security</label>
+					</fieldset>
+					
+					Service Standard:<input type="radio" name="service-standard"></input>
+					<input type="radio" name="service-standard"></input>
+					<input type="radio" name="service-standard"></input>
+					<input type="radio" name="service-standard"></input>
+					<input type="radio" name="service-standard"></input><br>
+					
+					<textarea placeholder="Tell us how you feel about our service"></textarea>
+					<a href="#feedback-thanks" data-role="button" data-role="dialog" data-inline="true">Send feedback</a>
+					<a href="#start-page" data-role="button" data-inline="true">Cancel</a>
+				
+				</form>
+			</div>
+			<footer data-role="footer">
+			<h3>&copy 2013 Accra Cab Services</h3>	
+			</footer>
+		</div>	
+
+	<!--Feedback-Thanks-->
+		<div id="feedback-thanks" data-role="dialog">
+			<div data-role="header" data-dismissible="false" data-potision-to-window><h1>Thank You</h1></div>
+			<div data-role="content">
+				<div>
+					<p style="text-align:center">We deeply appreciate your feedback.<br>Thank you.</p>
+				</div>
+			</div>
+			<footer data-role="footer">
+			<h3>&copy 2013 Accra Cab Services</h3>	
+			</footer>
+		</div>
+	<!--request-confirmation-->
+		<div id="request-confirmation" data-role="dialog">
+			<div data-role="header" data-dismissible="false" data-potision-to-window><h1>Request Received</h1></div>
+			<div data-role="content">
+				<div>
+					<p style="text-align:center">Your Request has been received. It is receiving immediate attention. We will get back to you in a minute.<br>Thank you.</p>
+				</div>
+			</div>
+			<footer data-role="footer">
+			<h3>&copy 2013 Accra Cab Services</h3>
+			</footer>
+		</div>
+
+	<!--next page here-->
+		<div data-role="page" id="????">
+			<header data-role="header">
+			<nav data-role="navbar" >
+			<ul>
+			<li><a href="#start-page" class="ui-btn-active ui-state-persist" data-icon="start-page">Home</a></li>
+			<li><a href="#settings" data-icon="gear">Settings</a><li>
+			</ul>	
+			</nav>	
+			</header>
+			<div data-role="content"></div>
+			<footer data-role="footer">
+			<h3>&copy 2013 Accra Cab Services</h3>
+			</footer>
+		</div>
+
+</body>
+</html>	
