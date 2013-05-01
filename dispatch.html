@@ -13,7 +13,7 @@
 </head>
 <body>
 	<div data-role="page" id="welcome">
-	<div data-role="header">
+	<div data-role="header" class="navbar navbar-inverse">
 		<h1>ACS Web Dashboard</h1>	
 	</div>
 	<div data-role="content">
@@ -35,7 +35,7 @@
 
 <!--Dashboard/Home-->
 	<div data-role="page" id="dispatch-home">
-		<header data-role="header">
+		<header data-role="header" class="navbar navbar-inverse">
 		<nav data-role="navbar" >
 			<ul>
 			<li><a href="#start-page" class="ui-btn-active ui-state-persist" data-icon="home"></a></li>	
@@ -47,11 +47,11 @@
 				<li class="nav-header">Client</li>
 				<!-- <li class='divider'></li> -->
 				<ul class="nav nav-tabs nav-stacked">
-				<li><a href="">Pending Requests</a></li>
-				<li><a href="">Active Requests</a></li>
-				<li><a href="">Completed Requests</a></li>
-				<li><a href="">Schedule</a></li>
-				<li><a href="">Feedback</a></li>
+				<li><a href="#pending-requests">Pending Requests</a></li>
+				<li><a href="#active-request">Active Requests</a></li>
+				<li><a href="#completed-request">Completed Requests</a></li>
+				<li><a href="#schedule">Schedule</a></li>
+				<li><a href="feedback">Feedback</a></li>
 				<li class='divider'></li>
 				<li class="nav-header">Driver</li>
 				<li class='divider'></li>
@@ -61,97 +61,62 @@
 			</div>
 			<div class="span10" class="row">
 				<div class="span5">
+					<ul>
 					<li class="nav-header">Pending Request</li>
-					
-					<div >
-				
-						<ul data-role="listview" data-inset="true">
-						<li data-role="divider">Tuesday, April 30</li>
-						<li ><a href="#">
-							<h4>Francis Kofigah</h4>
-							<p style="font-weight:bold">Transaction details go here but I have no idea how to format it as yet</p>
-							<p class="ui-li-aside">Pickup Time 12:15PM</p></a>
-						</li>
+					<div id="pending-requests">
+					<ul data-role="listview" data-role="collapsible" data-inset="true">
 
-						<li ><a href="#">
-							<h4>Francis Kofigah</h4>
-							<p style="font-weight:bold">Transaction details go here but I have no idea how to format it as yet</p>
-							<p class="ui-li-aside">Pickup Time 12:15PM</p></a>
-						</li>
-
-						<li ><a href="#">
-							<h4>Francis Kofigah</h4>
-							<p style="font-weight:bold">Transaction details go here but I have no idea how to format it as yet</p>
-							<p class="ui-li-aside">Pickup Time 12:15PM</p></a>
-						</li>
-
-						<li ><a href="#">
-							<h4>Francis Kofigah</h4>
-							<p style="font-weight:bold">Transaction details go here but I have no idea how to format it as yet</p>
-							<p class="ui-li-aside">Pickup Time 12:15PM</p></a>
-						</li>
-
-						</ul>
-					</div>
-					<div>
-					<li class="nav-header">Active Request</li>
-					<div >
-				
-						<ul data-role="listview" data-inset="true">
-						<li data-role="divider">Tuesday, April 30</li>
-						<li ><a href="#">
-							<h4>Francis Kofigah</h4>
-							<p style="font-weight:bold">Transaction details go here but I have no idea how to format it as yet</p>
-							<p class="ui-li-aside">Pickup Time 12:15PM</p></a>
-						</li>
-
+						<li data-role="divider" data-theme="a">Tuesday, April 30</li>
 						
-						<li ><a href="#">
-							<h4>Francis Kofigah</h4>
-							<p style="font-weight:bold">Transaction details go here but I have no idea how to format it as yet</p>
-							<p class="ui-li-aside">Pickup Time 12:15PM</p></a>
+						<li>
+							<div data-role="collapsible-set" data-inset="true">
+
+								<div data-role="collapsible" data-mini="true" data-inset="true">
+								<h3>Christian Osei Bonsu</h3>
+								<p>Location: Pent Hostel</p>
+								<p>Destination: Mest</p>
+								<p>Date: Wed, 1st May, 2013</p>
+								<p>Time: 2:00 PM</p>
+								<p>Other info: I have an appointment at 2:30 and need to be there 10mins ahead. </p>
+								</div>
+								
+								<div data-role="collapsible" data-mini="true" data-inset="false">
+								<h3>Adelaide Atakora</h3>
+								<p>Location: Lizzy Sport Comlex</p>
+								<p>Destination: Airport</p>
+								<p>Date: Wed, 2nd May, 2013</p>
+								<p>Time: 3:00 PM</p>
+								<p>Other info: I need to check in at 4:00 and I've got just under 500lb of luggage. </p>
+								</div>
+
+								<div data-role="collapsible" data-mini="true" data-inset="false">
+								<h3>Noah Fontes</h3>
+								<p>Location: MEST</p>
+								<p>Destination: ETS Drama Studio</p>
+								<p>Date: Wed, 2nd May, 2013</p>
+								<p>Time: 3:00 PM</p>
+								<p>Other info: I need to get a front seat so get me there on time. </p>
+								</div>
+
+	
+							</div>
+
 						</li>
-						</div>
+					</ul>	
 					</div>
+
+
+
 				</div>
 				<div class="span4">
 					<div>
-					<li class="nav-header">Active Drivers</li>
-					<div >
-				
-						<ul data-role="listview" data-inset="true">
-						<li data-role="divider">Tuesday, April 30</li>
-						<li ><a href="#">
-							<h4>Francis Kofigah</h4>
-							<p style="font-weight:bold">Transaction details go here but I have no idea how to format it as yet</p>
-							<p class="ui-li-aside">Pickup Time 12:15PM</p></a>
-						</li>
-
 						
-						<li ><a href="#">
-							<h4>Francis Kofigah</h4>
-							<p style="font-weight:bold">Transaction details go here but I have no idea how to format it as yet</p>
-							<p class="ui-li-aside">Pickup Time 12:15PM</p></a>
-						</li>
+					<li class="nav-header">Active Drivers</li>
+						<div data-role="collapsible">
 						</div>
 					</div>
 					<li class="nav-header">Available Drivers</li>
-					<div >
-				
-						<ul data-role="listview" data-inset="true">
-						<li data-role="divider">Tuesday, April 30</li>
-						<li ><a href="#">
-							<h4>Francis Kofigah</h4>
-							<p style="font-weight:bold">Transaction details go here but I have no idea how to format it as yet</p>
-							<p class="ui-li-aside">Pickup Time 12:15PM</p></a>
-						</li>
-
-						
-						<li ><a href="#">
-							<h4>Francis Kofigah</h4>
-							<p style="font-weight:bold">Transaction details go here but I have no idea how to format it as yet</p>
-							<p class="ui-li-aside">Pickup Time 12:15PM</p></a>
-						</li>
+					
 						</div>
 					</div>
 
