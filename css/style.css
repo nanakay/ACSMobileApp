@@ -95,3 +95,22 @@ h1#logo.lead-logo a { width:180px; height:31px; background-image:url(/img/lead-l
     
     .content-box { margin-left:-160px;  }
 }
+
+[data-role=page]{
+    height: 100% !important;
+    position:relative !important;
+}
+
+[data-role=footer]{
+    bottom:0;
+    position:absolute !important;
+    top: auto !important;
+    width:100%;
+}
+
+input[type='text']{
+    background-color: black;
+    border: 5px solid #000000;
+    padding: 80px 0;
+    margin: 50px;
+}
