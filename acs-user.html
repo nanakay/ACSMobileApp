@@ -2,17 +2,17 @@
 <html>
 <head>
     <title>Accra Cab Services</title>
-     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1">  -->
     <link rel="stylesheet" href="css/jquery.mobile-1.3.1.min.css">
     <link rel="stylesheet" href="css/jqm-datebox-1.1.0.css">
-
     <script src="js/jquery-1.9.1.min.js"></script>
     <script src="js/jquery.mobile-1.3.1.min.js"></script>
 
-    <script type="text/javascript" src="js/jqm-datebox-1.1.0.core.js"></script>
+    <script type="text/javascript" src="js/jqm-datebox.core.min.js"></script>
     <script type="text/javascript" src="js/jqm-datebox.mode.datebox.min.js"></script>
     <script type="text/javascript" src="js/jqm-datebox.mode.flipbox.min.js"></script>
-    <script type="text/javascript" src="js/jqm-datebox.mode.durationbox.min.js"></script>
+
+    <!--<script type="text/javascript" src="http://dev.jtsage.com/cdn/datebox/i18n/jquery.mobile.datebox.i18n.en_US.utf8.js"></script>-->
 
     <link rel="stylesheet" href="css/style.css">
     <script>
@@ -147,20 +147,12 @@
         <form method="post">
             <input type="text" name="location" placeholder="location">
             <input type="text" name="destination" placeholder="destination">
-
-
-
-            <!--<input type="date" data-role="datebox" name="somedate"-->
-            <!--data-options='{"mode": "datebox", "overrideDateFormat": "mm/dd/YYYY"}' />-->
+            <label for="mydate">Some Date</label>
 
             <input name="mydate" id="mydate" type="date" data-role="datebox"
+                   data-options='{"mode": "flipbox"  "overrideDateFormat": "mm/dd/YYYY"}'>
+            <input name="mydate" id="mytime " type="time" data-role="datebox"
                    data-options='{"mode": "flipbox"}'>
-
-
-            <label for="mydate">Some Time</label>
-            <input name="mydate" id="mytime" type="time" data-role="datebox"
-                   data-options='{"mode": "timebox"}'>
-
 
             <input type="date" name="date" placeholder="date" value="date" style="color: #a9a9a9">
             <input type="time" name="time" placeholder="time" autocomplete="on" value="time" style="color: #a9a9a9">
