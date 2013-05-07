@@ -83,9 +83,8 @@ function verify_user(evt) {
 	}
 	else {
 	    var error = "Phone number and password required";
-        var el = document.getElementById("login_error");
-        el.innerHTML = error;
-        el.style.display = "block";
+//        getError("login_error");
+        alert(error);
 	}
 	
 }
@@ -146,6 +145,7 @@ function createUser(evt) {
 		var error = "All data are required please";
 		getById("error").style.display = "block";
 		getById("error").innerHTML = error;
+		navigator.notification.beep(2);
 	}
 //	console.log(phone_number, password, verify_password, email);
 }
@@ -349,4 +349,7 @@ var value;
     return value;
 }
 
+function playBeep() {
+    navigator.notification.beep(3);
+}
 
